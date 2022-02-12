@@ -1,0 +1,261 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B47119B1-D405-462D-BE62-9A2FEA21C5FE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>StaffEducation.FormsUI</RootNamespace>
+    <AssemblyName>StaffEducation.FormsUI</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v21.2" />
+    <Reference Include="DevExpress.Charts.v21.2.Core, Version=21.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.Desktop.v21.2" />
+    <Reference Include="DevExpress.Data.v21.2" />
+    <Reference Include="DevExpress.DataAccess.v21.2, Version=21.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v21.2.UI, Version=21.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataVisualization.v21.2.Core, Version=21.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Dialogs.v21.2.Core, Version=21.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Mvvm.v21.2, Version=21.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v21.2.Core, Version=21.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v21.2.Core, Version=21.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Spreadsheet.v21.2.Core, Version=21.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v21.2" />
+    <Reference Include="DevExpress.Sparkline.v21.2.Core" />
+    <Reference Include="DevExpress.Utils.v21.2.UI, Version=21.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v21.2, Version=21.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v21.2, Version=21.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v21.2.UI, Version=21.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v21.2.Wizard, Version=21.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraDialogs.v21.2, Version=21.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v21.2" />
+    <Reference Include="DevExpress.Printing.v21.2.Core" />
+    <Reference Include="DevExpress.XtraGrid.v21.2, Version=21.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v21.2, Version=21.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraNavBar.v21.2, Version=21.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v21.2, Version=21.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraRichEdit.v21.2, Version=21.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraSpreadsheet.v21.2, Version=21.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v21.2, Version=21.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeMap.v21.2, Version=21.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Course\frmCourseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Course\frmCourseForm.Designer.cs">
+      <DependentUpon>frmCourseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Course\frmCourseManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Course\frmCourseManager.Designer.cs">
+      <DependentUpon>frmCourseManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Departman\frmDepartmanForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Departman\frmDepartmanForm.Designer.cs">
+      <DependentUpon>frmDepartmanForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Departman\frmDepartmanManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Departman\frmDepartmanManager.Designer.cs">
+      <DependentUpon>frmDepartmanManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Driving\frmDrivingManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Driving\frmDrivingManager.Designer.cs">
+      <DependentUpon>frmDrivingManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Education\frmEducationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Education\frmEducationForm.Designer.cs">
+      <DependentUpon>frmEducationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Education\frmEducationManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Education\frmEducationManager.Designer.cs">
+      <DependentUpon>frmEducationManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MilitaryType\frmMilitaryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MilitaryType\frmMilitaryForm.Designer.cs">
+      <DependentUpon>frmMilitaryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MilitaryType\frmMilitaryManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MilitaryType\frmMilitaryManager.Designer.cs">
+      <DependentUpon>frmMilitaryManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonCourse\frmPersonCourseManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonCourse\frmPersonCourseManager.Designer.cs">
+      <DependentUpon>frmPersonCourseManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Person\frmPersonForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Person\frmPersonForm.Designer.cs">
+      <DependentUpon>frmPersonForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Person\frmPersonManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Person\frmPersonManager.Designer.cs">
+      <DependentUpon>frmPersonManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Course\frmCourseForm.resx">
+      <DependentUpon>frmCourseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Course\frmCourseManager.resx">
+      <DependentUpon>frmCourseManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Departman\frmDepartmanForm.resx">
+      <DependentUpon>frmDepartmanForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Departman\frmDepartmanManager.resx">
+      <DependentUpon>frmDepartmanManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Driving\frmDrivingManager.resx">
+      <DependentUpon>frmDrivingManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Education\frmEducationForm.resx">
+      <DependentUpon>frmEducationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Education\frmEducationManager.resx">
+      <DependentUpon>frmEducationManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MilitaryType\frmMilitaryForm.resx">
+      <DependentUpon>frmMilitaryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MilitaryType\frmMilitaryManager.resx">
+      <DependentUpon>frmMilitaryManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonCourse\frmPersonCourseManager.resx">
+      <DependentUpon>frmPersonCourseManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Person\frmPersonForm.resx">
+      <DependentUpon>frmPersonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Person\frmPersonManager.resx">
+      <DependentUpon>frmPersonManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\StaffEducation.Business\StaffEducation.Business.csproj">
+      <Project>{AB9DC443-190C-4B64-9818-C61BE6CC1D76}</Project>
+      <Name>StaffEducation.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StaffEducation.DataAccess\StaffEducation.DataAccess.csproj">
+      <Project>{7B27FB34-2589-486E-BC33-6195FF175C81}</Project>
+      <Name>StaffEducation.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StaffEducation.Entity\StaffEducation.Entity.csproj">
+      <Project>{9C6D941C-9254-43F4-9604-1489800BE1D2}</Project>
+      <Name>StaffEducation.Entity</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Auth\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
